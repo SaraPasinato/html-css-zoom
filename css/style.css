@@ -52,6 +52,14 @@ main{
     background-size: cover;
     position: relative;
 }
+
+.text-desc{
+    background-color: rgba(0, 0,0, 0.5);
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding:10px;
+}
 /****** buttons ******/
 
 .btn{
@@ -137,13 +145,7 @@ a{
     color:lawngreen;
 }
 
-.text-desc{
-    background-color: rgba(0, 0,0, 0.5);
-    position: absolute;
-    bottom:0;
-    left:0;
-    padding:10px;
-}
+
 
 p{
     font-size: 20px;
