@@ -44,6 +44,14 @@ main{
 }
 
 
+.btn.btn.btn-gray.btn-large{
+    height: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 45px;
+    text-align: center;
+    color: #f00;
+}
 a{
     text-decoration: none;
     color: white;
@@ -67,14 +75,15 @@ a{
 
 .content-footer .content-item{
     width: 100%;
-    border: dashed 1px  coral;
-    padding: 10px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.content-footer .content-item:last-child{
+    justify-content: flex-end;
+}
 .content-footer .content-item:first-child{
     justify-content: flex-start;
 }
@@ -85,9 +94,11 @@ a{
     text-align: center;
     align-items: center;
     margin-left: 10px;
+    white-space: nowrap;
 }
-
-
+#btn-footer .content-footer .content-item{
+    align-items: flex-end;
+}
 .content-footer .fas{
     font-size: 40px;
     margin: 15px;
@@ -98,16 +109,12 @@ a{
     margin-right: 20px;
     display: inline;
 }
+
 .fas.fa-share-square{
     color:lawngreen;
 }
 
-#share p{
-    white-space: nowrap;
-    padding: 0 20px;
-    font-size: 20px;
-    text-align:left;
-}
+
 p{
     font-size: 20px;
 }
