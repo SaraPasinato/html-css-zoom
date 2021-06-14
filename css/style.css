@@ -50,6 +50,7 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 /****** buttons ******/
 
@@ -70,7 +71,7 @@ main{
     height: 100%;
     border-radius: 0;
     margin: 0;
-    padding: 20px;
+    padding: 70px 20px;
     text-align: center;
     color: #f00;
 }
@@ -122,8 +123,8 @@ a{
     align-items: flex-end;
 }
 .content-footer .fas{
-    font-size: 40px;
-    margin: 10px;
+    font-size: 30px;
+    margin: 12px;
 }
 
 .fas.fa-chevron-up{
@@ -136,7 +137,15 @@ a{
     color:lawngreen;
 }
 
+.text-desc{
+    background-color: rgba(0, 0,0, 0.5);
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding:10px;
+}
 
 p{
     font-size: 20px;
+    color: white;
 }
