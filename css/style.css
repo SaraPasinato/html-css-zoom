@@ -7,12 +7,15 @@
 body{
     font-family: sans-serif;
     background-color: #000;
+    max-width: 1800px;
+    min-width: 900px;
+ 
+    overflow: hidden;
 }
 
 /****** header ******/
 #main-header{
     height: 8vh;
-    background-color: yellow;
     overflow: hidden;
 }
 
@@ -21,11 +24,17 @@ body{
     text-align: right;
 }
 
+/****** main ******/
+main{
+    height: calc(100vh - 20vh);
+    background-color: teal;
+}
 /****** buttons ******/
 
 .btn{
     padding: 10px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .btn.btn-gray{
@@ -34,17 +43,54 @@ body{
 
 }
 
+
 a{
     text-decoration: none;
-    
+    color: white;
 }
 
 .fas{
     margin:0 3px;
+    color: white;
 }
 /****** footer ******/
-/* #main-footer{
-    height: 10vh;
-    background-color: yellow;
+#main-footer{
     overflow: hidden;
-} */
+    background-color: #222222;
+}
+
+.content-footer{
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-footer .content-item{
+    width: 100%;
+    border: dashed 1px  coral;
+    flex-grow: 1;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+   
+}
+.content-footer .content-item .items{
+    text-align: center;
+    align-items: center;
+}
+
+.content-footer .fas{
+    font-size: 40px;
+    margin: 10px;
+}
+
+.fas.fa-chevron-up{
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+
+p{
+    font-size: 20px;
+}
